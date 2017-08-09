@@ -14,6 +14,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <script src="<?php echo get_bloginfo('template_url') ?>/js/jquery-1.10.1.min.js"></script>
 <script src="<?php echo get_bloginfo('template_url') ?>/js/idangerous.swiper2.7.6.min.js"></script>
+<link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/favicon.ico" >
 </head>
 <body>
 <div id="wrapper">
