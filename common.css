@@ -1,0 +1,255 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a:link {
+  text-decoration: none;
+  color: #000; }
+
+/* 没访问过的链接样式 */
+a:visited {
+  text-decoration: none;
+  color: #000; }
+
+/* 访问过的链接样式 */
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+/* 鼠标进入链接区域的链接样式 */
+a:active {
+  text-decoration: none;
+  color: #000; }
+
+/* 点击链接时的链接样式 */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, Georgia, Sans-serif;
+  font-size: 12px;
+  text-align: left;
+  vertical-align: top;
+  background: #ffffff; }
+
+.swiper-container {
+  width: 100%;
+  height: 1030px; }
+  .swiper-container .swiper-slide {
+    width: 100%;
+    height: 1030px; }
+    .swiper-container .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+
+.pagination {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  margin-top: -230px;
+  z-index: 10; }
+  .pagination .swiper-pagination-switch {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 1; }
+  .pagination .swiper-active-switch {
+    background-color: #E44B2F; }
+
+.bannerInfoDiv {
+  position: absolute;
+  width: 100%;
+  top: 470px;
+  text-align: center;
+  color: white;
+  pointer-events: none;
+  z-index: 10; }
+  .bannerInfoDiv .title {
+    font-size: 65px; }
+  .bannerInfoDiv .subTitle {
+    font-size: 36px;
+    line-height: 60px; }
+
+#header {
+  width: 100%;
+  height: 110px;
+  background-color: #000; }
+  #header .content {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 110px; }
+    #header .content .logo {
+      float: left;
+      width: 232px;
+      height: 106px;
+      background: linear-gradient(#E44B2F, #E27236); }
+      #header .content .logo img {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 30px; }
+    #header .content .item {
+      float: right;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: 130px;
+      height: 110px;
+      text-align: center;
+      color: white; }
+      #header .content .item .title {
+        font-size: 20px;
+        margin-top: 30px; }
+      #header .content .item .subTitle {
+        font-size: 12px;
+        line-height: 20px; }
+    #header .content .item:hover {
+      color: #E44B2F; }
+    #header .content .btnSearch {
+      float: right;
+      width: 40px;
+      margin-left: 20px;
+      height: 110px;
+      overflow: hidden;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      #header .content .btnSearch figure img {
+        float: right;
+        margin-top: 40px;
+        vertical-align: top;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; }
+      #header .content .btnSearch input {
+        position: absolute;
+        margin-top: 35px;
+        margin-right: 45px;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        vertical-align: top;
+        color: #fff;
+        background: transparent;
+        border: none;
+        display: none;
+        text-indent: 10px; }
+    #header .content .btnSearch:hover {
+      width: 200px; }
+      #header .content .btnSearch:hover input {
+        display: block;
+        border: 1px solid white; }
+      #header .content .btnSearch:hover figure img {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg); }
+  #header ul {
+    float: right;
+    width: 630px;
+    height: 52px;
+    margin-top: 22px;
+    list-style: none; }
+    #header ul li {
+      float: right;
+      width: 85px;
+      line-height: 51px;
+      margin-left: 20px;
+      font-size: 18px;
+      text-align: center;
+      border-bottom: 3px solid transparent; }
+
+#addressInfo {
+  width: 100%;
+  height: 238px;
+  background: #333 url("./img/1-bottomBg.png") no-repeat center;
+  background-size: cover;
+  color: #BDBEBF; }
+  #addressInfo table {
+    display: block;
+    margin: 50px auto;
+    width: 1100px;
+    padding-top: 50px; }
+    #addressInfo table th {
+      line-height: 30px;
+      font-size: 24px;
+      font-weight: normal;
+      min-width: 410px; }
+    #addressInfo table td {
+      font-size: 12px;
+      line-height: 20px;
+      color: #7D7D7E; }
+    #addressInfo table .td1 {
+      font-size: 14px;
+      color: #BDBEBF;
+      padding-bottom: 10px; }
+
+#footer {
+  width: 100%;
+  height: 83px;
+  padding-top: 45px;
+  text-align: center;
+  color: #9A9899;
+  background-color: #000;
+  font-size: 14px; }
+
+.navigation {
+  display: block;
+  width: 1000px;
+  height: 40px;
+  line-height: 20px;
+  margin: 20px auto;
+  font-size: 14px; }
+  .navigation .fLeft {
+    float: left;
+    max-width: 370px;
+    margin-left: 250px; }
+  .navigation .fRight {
+    float: right;
+    max-width: 370px; }
+  .navigation a {
+    text-decoration: underline; }
+
+@keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0 rgba(228, 75, 47, 0.7);
+    background: rgba(228, 75, 47, 0.7); }
+  100% {
+    box-shadow: 0 0 0 20px rgba(228, 75, 47, 0);
+    background: rgba(228, 75, 47, 0); } }
+@-webkit-keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0 rgba(228, 75, 47, 0.7);
+    background: rgba(228, 75, 47, 0.7); }
+  100% {
+    box-shadow: 0 0 0 20px rgba(228, 75, 47, 0);
+    background: rgba(228, 75, 47, 0); } }
+.page_navi {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 1em;
+  margin-bottom: 20px; }
+
+.page_navi a {
+  padding: 3px 8px;
+  margin: 2px;
+  text-decoration: none;
+  color: #888;
+  background-color: #EAEAEB;
+  border: 1px solid #EAEAEB;
+  border-radius: 3px; }
+
+.page_navi a:hover, .page_navi a.current {
+  border: 1px solid #C3C4C5;
+  color: #ffffff;
+  background-color: #C3C4C5;
+  font-weight: bolder; }
+
+/*# sourceMappingURL=common.css.map */
